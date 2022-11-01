@@ -2,6 +2,12 @@
 
 Write a program similar to ``` fdisk -l ```
 
+#### Compilation command :
+
+```
+$ gcc mydisk.c -o mydisk
+```
+
 #### Exemple of the output :
 
 ```
