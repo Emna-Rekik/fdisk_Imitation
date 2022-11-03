@@ -7,7 +7,7 @@ Write a program similar to ``` fdisk -l ```
 ```
 $ gcc sources/unit_conversion.c sources/gpt_parsing.c sources/mbr_parsing.c  mydisk.c -o mydisk
 ```
-This program supports mbr and gpt parsing.
+This program supports MBR and GPT parsing.
 
 #### Examples of the output :
 
