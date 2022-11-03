@@ -5,10 +5,15 @@ Write a program similar to ``` fdisk -l ```
 #### Compilation command :
 
 ```
-$ gcc mydisk.c -o mydisk
+$ gcc sources/unit_conversion.c sources/gpt_parsing.c sources/mbr_parsing.c  mydisk.c -o mydisk
 ```
+This program supports mbr and gpt parsing.
 
-#### Exemple of the output :
+#### Examples of the output :
+
+---
+#### MBR
+---
 
 ```
 $ fdisk -l ./myhdd_mbr
@@ -19,4 +24,18 @@ $ fdisk -l ./myhdd_mbr
 $ ./mydisk ./myhdd_mbr
 ```
 ![2](https://user-images.githubusercontent.com/89909599/199345598-594dc33a-c934-4345-86f0-a738c06a69ee.png)
+
+---
+#### GPT
+---
+
+```
+$ fdisk -l ./myhdd_gpt
+```
+![11](https://user-images.githubusercontent.com/89909599/199847545-5805fd03-0371-4f5d-86fc-f5269cd9005c.png)
+
+```
+$ ./mydisk ./myhdd_gpt
+```
+![22](https://user-images.githubusercontent.com/89909599/199847581-0d3b02de-892e-47a5-a61d-b48b63065915.png)
 
